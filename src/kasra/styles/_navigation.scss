@@ -1,0 +1,18 @@
+#topNav {
+    background-color: $lightGrey;
+    margin-top: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    & li {
+        list-style-type: none;
+        padding: 8px 15px;
+        & a {
+            color: $darkGrey;
+            @extend  %transitionAll;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}

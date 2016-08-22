@@ -1,0 +1,8 @@
+{
+	"distDir": "dist",
+	"maxUrlLength": "74",
+	"mongodb": {
+		"maxPoolSize": 10,
+		"connectTimeoutMS": 0
+	}
+}

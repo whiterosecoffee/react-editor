@@ -1,0 +1,35 @@
+#articleDetails {
+    float: right;
+    width: 66%;
+    cite {
+        color: #b1b3b5;
+        font-size: .75em;
+    }
+}
+    #articleTitle {
+        font-size: 1.75rem;
+    }
+    #articleDate {
+        color: #b1b3b5; //reused?
+        font-size: 1.125rem;
+        @extend .numberFont;//see typography.scss
+    }
+    #articleBanner {
+        // on all images?
+    }
+    #articleAuthor {
+        border-top: 1px solid $lightGrey;
+        border-bottom: 1px solid $lightGrey;
+        margin-bottom: 25px;
+        padding: 25px 0;
+
+        .userImage {
+            height: 100px;
+            width: 100px;
+        }
+
+        .authorBio {
+            margin: 0;
+        }
+    }
+

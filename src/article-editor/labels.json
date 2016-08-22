@@ -1,0 +1,10 @@
+{
+	"title": "عنوان الموضوع",
+	"content": "محتوى الموضوع",
+	"save": "حفظ",
+	"add": "Add",
+	"via": "Via",
+
+	"headlinePlaceholder": "Optional Headline",
+	"viaPlaceholder": "?Where did you find it (URL)"
+}

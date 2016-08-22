@@ -1,0 +1,14 @@
+dist
+node_modules
+bower_components
+.sass-cache
+npm-debug.log
+src/kasra/local-config.json
+config.codekit
+*.sublime*
+.DS_Store
+*BAK*
+npm-debug.log
+phantomjsdriver.log
+src/cat.jpeg
+uploads

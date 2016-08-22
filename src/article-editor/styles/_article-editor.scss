@@ -1,0 +1,76 @@
+//Children imported at the bottom
+#editor{
+    direction: rtl;
+    margin: 75px auto 0 auto; //remove for production
+    width: 65%; //define with UX
+    button, div.editorSecondaryBtn {
+        height: 30px;
+        width: 100px;
+    }
+    div.editorSecondaryBtn {
+        border-radius: 3px;
+    }
+    label {
+        display: block;
+        line-height: 2.65;
+        input {
+            display: inline-block;
+            width: 81.5%;
+        }
+        span {
+            display: inline-block;
+            width: 18%;
+        }
+    }
+    input,
+    textarea {
+        padding: 5px 15px;
+
+    }
+    textarea {
+        width: 100%;
+    }
+}
+    div.editorSecondaryBtn:hover {
+        cursor: pointer;
+    }
+    div.editorSecondaryBtn img {
+        margin-right: 35px;
+        margin-top: 2px;
+    }
+    .editorContent { min-height: 150px;}
+
+    .editorPrimaryBtn {
+        background-color: blue;
+        border: 2px solid blue;
+        color: white;
+    }
+    .editorSecondaryBtn {
+        vertical-align: top;
+        color: $darkGrey;
+        background-color: $bgGrey;
+        border: 2px solid $bgGrey;
+    }
+
+    .editorPrimaryBtn:hover { background-color: #3333FF;}
+    #editorFlowBtns {
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        padding: 15px 10px 10px 10px;
+        background-color: $borderAccent;
+        .editorSecondaryBtn {
+            float: left;
+        }
+    }
+        #editorSaveDraftBtn {
+            margin-right: 15px;
+        }
+
+//requires UX approval
+@import "editor-blocks";
+@import "article-header";
+@import "block-image";

@@ -1,0 +1,7 @@
+{
+	"mongodb": {
+		"auth": "",
+		"host": "localhost:27017",
+		"db": "kasra2"
+	}
+}

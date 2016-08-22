@@ -1,0 +1,15 @@
+.imageDropZone {
+    margin-bottom: 1rem;
+}
+.imageDropZone .uploader {
+        background: #ccc url("../images/drag-drop-bg.png") center center no-repeat;
+        position: relative;
+        padding: 25px;
+        height: 150px;
+    }
+        .imageDropZone .uploaderBtns {
+            position: absolute;
+            bottom: 20px;
+            right: 25px;
+        }
+

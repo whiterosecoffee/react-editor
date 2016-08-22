@@ -1,0 +1,17 @@
+@import "font-face"; // kasra icon font, droid kufi and naskh
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-family:'Droid Arabic Kufi'; font-weight: normal; direction: rtl;} p, a, li, span, { direction: rtl;}
+
+/* Colours */
+body {
+    color: $darkGrey;
+    font-family:'Droid Arabic Naskh';
+    text-align: right;
+}
+.numberFont {
+    font-family: 'sans-serif';
+}

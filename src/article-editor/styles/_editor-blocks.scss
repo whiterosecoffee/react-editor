@@ -1,0 +1,19 @@
+#editor section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+}
+.editorBlock {
+    label,
+    textarea {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+.blockOptionalHeadline span {
+    text-align: left;
+}

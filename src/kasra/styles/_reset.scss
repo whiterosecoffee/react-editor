@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix { zoom: 1; }
+.clearfix:before,
+.clearfix:after {content: "";display: table; }
+.clearfix:after { clear: both; }
+body {margin: 0;}
+a {
+    text-decoration: none;
+    &:visited { color: inherit; }
+}
+img {
+    max-width: 100%;
+}
+button,
+input,
+textarea {
+    border: 1px solid $borderAccent;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-radius: 3px;
+    font-family: inherit;
+}
+a,
+input,
+textarea {
+    color: inherit;
+}
+button:hover { cursor: pointer;}

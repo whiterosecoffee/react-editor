@@ -1,0 +1,13 @@
+.userComponent {
+    float: right;
+    margin-left: 25px;
+}
+    .userImage {
+        border: 1px solid $lightGrey;
+        border-radius: 50%;
+    }
+    .userName,
+    .userName span {
+        display: block;
+        text-align: center;
+    }

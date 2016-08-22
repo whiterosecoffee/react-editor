@@ -1,0 +1,69 @@
+// Breakpoints
+
+$small: 30.5em;
+$smallPlus: 42.5em; //Unique width to accommodate small tablets, where full width tiles would be too large
+$medium: 61.25em;
+$large: 75em;
+// Media Query Mixins
+
+@mixin small { // Usage: p { @include small { font-size: 1em; } }
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+@mixin smallPlus {
+  @media (min-width: #{$small}) and (max-width: #{$smallPlus}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: #{$smallPlus}) and (max-width: #{$medium}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@include small {
+    section,
+    .threeTwoOne { width: 100%; }
+    .gutter { display: none; }
+}
+@include smallPlus {
+    .col-emblem,
+    .triangle-bottom,
+    .gutter { display: none; }
+    .kasraMostViewed,
+    .kasraNewest { display: block; }
+    .threeTwoOne,
+    .kasraNewest,
+    .kasraMostViewed,
+    .kasraMostShared { width: 100%; }
+}
+@include medium {
+    $gutter: 2.43%;
+    /*Gutter Allowance = number of gutters * gutter width / number of columns. */
+    $oneGutterAllowance: 1 * $gutter / 2;
+    //$twoGutterAllowance: 2 * $gutter / 3;
+    .gutter { width: $gutter; }
+    .gutterDesktop { display: none; }
+    .col-1-3 { width: 33.33% - $oneGutterAllowance; }
+    .col-2-3 { width: 66.66% - $oneGutterAllowance; }
+    .threeTwoOne { width: 50%; }
+}
+@include large {
+    $gutter: 1.66%; // gutter dimension / max-width : 20px / 1200px
+    $twoGutterAllowance: 2 * $gutter / 3;
+    //$threeGutterAllowance: 3 * $gutter / 4;
+    .gutter { width: $gutter; }
+    .kasraNewest { width: 21% - $twoGutterAllowance; }
+    .kasraMostViewed { width: 32% - $twoGutterAllowance; }
+    .kasraMostShared { width: 47% - $twoGutterAllowance; }
+    .threeTwoOne { width: 33%; }
+
+}
+@import "mixins";
+#root { max-width: $large; margin: 0 auto; }

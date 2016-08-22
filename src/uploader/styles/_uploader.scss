@@ -1,0 +1,22 @@
+.uploaderAddBtn {
+    margin-left: 15px;
+    }
+.uploaderChooseFileBtn {
+    position: relative;
+
+    input { //input has height and width to match the dimensions on the upload button
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+

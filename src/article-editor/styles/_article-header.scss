@@ -1,0 +1,30 @@
+#articleHeader {
+    h1 {
+        margin-top: 0;
+    }
+    label,
+    time {
+        display: block;
+        margin-bottom: 25px;
+    }
+    time {
+        color: #ccc;
+
+    }
+}
+#articleHeader > label span {
+        text-align: left;
+    }
+    .uploader {
+        clear: right;
+        margin-bottom: 30px;
+    }
+
+    #headerBanner > img {
+        border: 7px solid white;
+    }
+    #bannerLarge {
+        margin-left: 5%;
+    }
+
+
