@@ -1,9 +1,10 @@
 # Editorial CMS - Online Magazine
-
+Custom Headless CMS / SPA.  Team developed in a scrum environment.   Primarily resopnsible for creating stateful components, connecting them to Express endpoints and styling output.  
+**React, Mongo, Express, 
 ## File structure
 
 	.
-	├── dist - The client side of the app, which will hopefully be delivered by CDN soon.
+	├── dist - The client side of the app.
 	│   ├── index.css - Compiled CSS
 	│   ├── index.css.map - A sourcemap for the generated css. Ensures that inspected styles refer to the original source, not the compiler output.
 	│   ├── index.html
