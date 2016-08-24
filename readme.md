@@ -1,11 +1,7 @@
 # Editorial CMS - Online Magazine
-Custom Headless CMS / SPA.  Team developed in a scrum environment.   
+Custom Headless CMS / SPA.  Team developed in a scrum environment.   **Mandi, See scope document for tech stack.
 
 Primarily resopnsible for creating stateful components and actions, connecting to Express endpoints, front end routing, styling output and testing front end components.  Implemented Labels system for multi language support
-
-####Tech Stack
-**React, Mongo, Express
-**Gulp, Bower, Git, React Router, jshint(http://felixge.de/), Selinium, Chai, Underscore, Lodash
 
 
 ## File structure
