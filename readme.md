@@ -1,6 +1,7 @@
 # Editorial CMS - Online Magazine
-Custom Headless CMS / SPA.  Team developed in a scrum environment.   Primarily resopnsible for creating stateful components, connecting them to Express endpoints and styling output.  
-**React, Mongo, Express, 
+Custom Headless CMS / SPA.  Team developed in a scrum environment.   Primarily resopnsible for creating stateful components and actions, connecting to Express endpoints, front end routing, styling output and testing front end components.  Implemented Labels system for multi language support
+**React, Mongo, Express
+**Gulp, Bower, Git, React Router, jshint(http://felixge.de/), Selinium, Chai, Underscore, Lodash
 ## File structure
 
 	.
