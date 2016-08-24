@@ -1,4 +1,4 @@
-# Kasra 2
+# Editorial CMS - Online Magazine
 
 ## File structure
 
@@ -82,15 +82,15 @@ Installing Mongodb:
 	source ~/.profile
 	in new terminal start up mongod: mongod --dbpath ~/data
 
-Copy `src/kasra/local-config.example.json` to `src/kasra/local-config.json` and update it for the configuration that is specific to your local machine. This is for configuring the database connection between the Node server and the MongoDB server. `local-config.json` will often be different depending on where the site is running, so it should not be versioned.
+Copy `src/***.json` to `src/***/local-config.json` and update it for the configuration that is specific to your local machine. This is for configuring the database connection between the Node server and the MongoDB server. `local-config.json` will often be different depending on where the site is running, so it should not be versioned.
 
 Add the follwoing amazon S3 settings to this config file:
 
 	"amazon_s3": {
-			"accessKeyId": "AKIAJSON6BLD6PPHTVZQ",
-			"secretAccessKey": "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",
-			"Bucket": "kasraco",
-			"region": "eu-west-1"
+			"accessKeyId": "",
+			"secretAccessKey": "",
+			"Bucket": ,
+			"region": 
 	}
 
 ## Getting Started
@@ -111,8 +111,5 @@ Build the client side distribution, test, start a server and keep rebuilding it 
 
 The site will be available on [localhost:3000](localhost:3000).
 
-## Contributing
 
-Developers: Grab a task from [Jira](https://menapost.atlassian.net/secure/RapidBoard.jspa?rapidView=2) and build it following the [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workfow.
 
-Everyone else: Add any omitted user stories to the backlog, or make a feature request to Nawaf. When we are ready for user testing, we will ask.
